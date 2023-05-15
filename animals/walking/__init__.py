@@ -4,3 +4,4 @@ from .rhino import Rhino
 from .rabbit import Rabbit
 from .llama import Llama
 from .zebra import Zebra
+from .goose import Goose
