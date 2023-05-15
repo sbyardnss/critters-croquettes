@@ -1,4 +1,3 @@
-from datetime import date
 from ..animals import Animal
 # class Copperhead:
 #     """slithering instance"""

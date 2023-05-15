@@ -1,4 +1,3 @@
-from datetime import date
 from ..animals import Animal
 class Clam(Animal):
     def __init__(self, name, shift, species, food, chip_num):
