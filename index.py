@@ -212,7 +212,7 @@ arms = Octopus("Arms", "octopus", "fish")
 sal = Salamander("Sal", "salamander", "no idea")
 majesty = Kingsnake("Majesty", "king snake", "mice")
 squirmy = GardenSnake("Squirmy", "garden snake", "mice")
-slithery_boy = Copperhead("Slithery Boy", "copperhead", "mice")
+slithery_boy = Copperhead("Slithery Boy", "copperhead", "mice", 555783)
 angela = Anaconda("Angela", "anaconda", "mice")
 
 varmint_village = PettingZoo("Varmint Village")
@@ -252,7 +252,10 @@ attractions.append(varmint_village)
 attractions.append(marsh_madness)
 attractions.append(noodle_town)
 
-for attraction in attractions:
-    print(f'{attraction.attraction_name} is where you will find:')
-    for animal in attraction.animals:
-        print(f'{animal.name} the {animal.species}')
+# for attraction in attractions:
+#     print(f'{attraction.attraction_name} is where you will find:')
+#     for animal in attraction.animals:
+#         print(f'{animal.name} the {animal.species}')
+
+# slithery_boy.chip_num = 555784
+# print(slithery_boy.chip_number)  
