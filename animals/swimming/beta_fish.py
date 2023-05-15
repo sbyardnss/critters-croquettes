@@ -1,14 +1,14 @@
 from datetime import date
-
-class BetaFish:
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
+from ..animals import Animal
+class BetaFish(Animal):
+    def __init__(self, name, shift, species, food, chip_num):
+        super().__init__(name, species, food, chip_num)
+        self.shift = shift
         self.swimming = True
-        self.food = food
-    def __str__(self):
-        return f'{self.name} is a {self.species}'
+    def __repr__(self):
+        return f'{self.__class__.__name__}: ({self.name}, {self.species}, {self.date_added}, {self.swimming}, {self.shift}, {self.food}, {self.chip_number})'
+
+
 
 
 # angry = BetaFish("Angry", "beta fish", "fish food")

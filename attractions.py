@@ -5,7 +5,9 @@ class PettingZoo:
         self.animals = list()
     def house_animal(self, animal):
         self.animals.append(animal)
-
+    @property
+    def last_critter_added(self):
+        return self.animals[-1]
 # varmint_village = PettingZoo("Varmint Village")
 
 class Wetlands:
