@@ -1,6 +1,6 @@
 from datetime import date
 
-class Goldfish:
+class BetaFish:
     def __init__(self, name, species, food):
         self.name = name
         self.species = species
@@ -11,5 +11,5 @@ class Goldfish:
         return f'{self.name} is a {self.species}'
 
 
-goldie = Goldfish("Goldie", "goldfish", "fish food")
-print(goldie)
+# angry = BetaFish("Angry", "beta fish", "fish food")
+# print(angry)

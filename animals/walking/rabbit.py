@@ -12,5 +12,5 @@ class Rabbit:
         return f'{self.name} is a {self.species}'
 
 
-hopper = Rabbit("Hopper", "rabbit", "A", "rabbit food")
-print(hopper)
+# hopper = Rabbit("Hopper", "rabbit", "A", "rabbit food")
+# print(hopper)

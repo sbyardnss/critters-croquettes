@@ -1,6 +1,6 @@
 from datetime import date
 
-class SeaSnail:
+class Octopus:
     def __init__(self, name, species, food):
         self.name = name
         self.species = species
@@ -11,5 +11,5 @@ class SeaSnail:
         return f'{self.name} is a {self.species}'
 
 
-sticky = SeaSnail("Sticky", "sea snail", "algae")
-print(sticky)
+# arms = Octopus("Arms", "octopus", "fish")
+# print(arms)

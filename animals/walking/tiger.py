@@ -1,6 +1,6 @@
 from datetime import date
 
-class Goat:
+class Tiger:
     def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
@@ -12,6 +12,5 @@ class Goat:
         return f'{self.name} is a {self.species}'
 
 
-jim = Goat("Jim", "goat", "A", "hay")
-print(jim)
-print(f"{jim.name} is available during the {jim.shift} shift")
+# rufus = Tiger("Rufus", "domestic tiger", "B", "Jim")
+# print(rufus)

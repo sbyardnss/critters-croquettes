@@ -1,6 +1,6 @@
 from datetime import date
 
-class Salamander:
+class Kingsnake:
     """slithering instance"""
     def __init__(self, name, species, food):
         self.name = name
@@ -12,5 +12,5 @@ class Salamander:
         return f'{self.name} is a {self.species}'
 
 
-sal = Salamander("Sal", "salamander", "no idea")
-print(sal)
+# majesty = Kingsnake("Majesty", "king snake", "mice")
+# print(majesty)

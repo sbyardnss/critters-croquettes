@@ -12,5 +12,5 @@ class Zebra:
         return f'{self.name} is a {self.species}'
 
 
-stripes = Zebra("Stripes", "Zebra", "C", "grass")
-print(stripes)
+# stripes = Zebra("Stripes", "Zebra", "C", "grass")
+# print(stripes)

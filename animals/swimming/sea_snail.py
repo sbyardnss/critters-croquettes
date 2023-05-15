@@ -1,16 +1,15 @@
 from datetime import date
 
-class Copperhead:
-    """slithering instance"""
+class SeaSnail:
     def __init__(self, name, species, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
-        self.slithering = True
+        self.swimming = True
         self.food = food
     def __str__(self):
         return f'{self.name} is a {self.species}'
 
 
-slithery_boy = Copperhead("Slithery Boy", "copperhead", "mice")
-print(slithery_boy)
+# sticky = SeaSnail("Sticky", "sea snail", "algae")
+# print(sticky)
