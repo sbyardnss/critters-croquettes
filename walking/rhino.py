@@ -1,12 +1,13 @@
 from datetime import date
 
 class Rhino:
-    def __init__(self, name, species):
-        self.name = ""
-        self.species = ""
+    def __init__(self, name, species, shift):
+        self.name = name
+        self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
 
 
-bill = Rhino("Bill", "rhino")
+bill = Rhino("Bill", "rhino", "B")
 print(bill)

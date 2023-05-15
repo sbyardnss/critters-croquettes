@@ -2,14 +2,13 @@ from datetime import date
 
 
 class Llama:
-    def __init__(self):
-        self.name = ""
-        self.species = ""
+    def __init__(self, name, species, shift):
+        self.name = name
+        self.species = species
         self.date_added = date.today()
+        self.walking = True
+        self.shift = shift
 
 
-miss_fuzz = Llama()
-miss_fuzz.name = "Miss Fuzz"
-miss_fuzz.species = "domestic llama"
-miss_fuzz.walking = True
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "C")
 print(miss_fuzz)
