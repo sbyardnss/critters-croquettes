@@ -238,11 +238,21 @@ noodle_town.house_animal(squirmy)
 noodle_town.house_animal(slithery_boy)
 noodle_town.house_animal(angela)
 
-for animal in varmint_village.animals:
-    print(f'you can find {animal.name} in {varmint_village.attraction_name}')
+# for animal in varmint_village.animals:
+#     print(f'you can find {animal.name} in {varmint_village.attraction_name}')
 
-for animal in marsh_madness.animals:
-    print(f'you can find {animal.name} in {marsh_madness.attraction_name}')
+# for animal in marsh_madness.animals:
+#     print(f'you can find {animal.name} in {marsh_madness.attraction_name}')
 
-for animal in noodle_town.animals:
-    print(f'you can find {animal.name} in {noodle_town.attraction_name}')
+# for animal in noodle_town.animals:
+#     print(f'you can find {animal.name} in {noodle_town.attraction_name}')
+
+attractions = []
+attractions.append(varmint_village)
+attractions.append(marsh_madness)
+attractions.append(noodle_town)
+
+for attraction in attractions:
+    print(f'{attraction.attraction_name} is where you will find:')
+    for animal in attraction.animals:
+        print(f'{animal.name} the {animal.species}')
