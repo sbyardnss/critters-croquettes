@@ -1,4 +1,4 @@
 [MASTER]
-disable = C0114, E0013
+disable = C0114, E0013, E0401
 [MESSAGES CONTROL]
 disable=no-member
