@@ -1,6 +1,6 @@
 from animals import Anaconda, Kingsnake, Copperhead, Salamander, GardenSnake, Octopus, Clam, Goldfish, BetaFish, SeaSnail, Llama, Tiger, Zebra, Rabbit, Rhino, Goat, Goose
-
-from attractions import SnakePit, Wetlands, PettingZoo
+from attractions import PettingZoo
+# from attractions.attractions import SnakePit, Wetlands, PettingZoo
 
 jim = Goat("Jim", "A", "goat", "hay", 191683)
 hopper = Rabbit("Hopper", "A", "rabbit", "rabbit food", 967298)
@@ -18,29 +18,30 @@ majesty = Kingsnake("Majesty", "B", "king snake", "mice", 582085)
 squirmy = GardenSnake("Squirmy", "B", "garden snake", "mice", 263495)
 slithery_boy = Copperhead("Slithery Boy", "A", "copperhead", "mice", 555783)
 angela = Anaconda("Angela", "A", "anaconda", "mice", 123456)
+# angela.__chip_number = 987654
+# print(angela.__chip_number)
+varmint_village = PettingZoo("Varmint Village", "critters that like to dig and scour")
+# marsh_madness = Wetlands("Marsh Madness")
+# noodle_town = SnakePit("Noodle Town")
 
-varmint_village = PettingZoo("Varmint Village")
-marsh_madness = Wetlands("Marsh Madness")
-noodle_town = SnakePit("Noodle Town")
+# varmint_village.house_animal(jim)
+# varmint_village.house_animal(hopper)
+# varmint_village.house_animal(rufus)
+# varmint_village.house_animal(miss_fuzz)
+# varmint_village.house_animal(stripes)
+# varmint_village.house_animal(bill)
 
-varmint_village.house_animal(jim)
-varmint_village.house_animal(hopper)
-varmint_village.house_animal(rufus)
-varmint_village.house_animal(miss_fuzz)
-varmint_village.house_animal(stripes)
-varmint_village.house_animal(bill)
+# marsh_madness.house_animal(goldie)
+# marsh_madness.house_animal(cloyster)
+# marsh_madness.house_animal(sticky)
+# marsh_madness.house_animal(angry)
+# marsh_madness.house_animal(arms)
 
-marsh_madness.house_animal(goldie)
-marsh_madness.house_animal(cloyster)
-marsh_madness.house_animal(sticky)
-marsh_madness.house_animal(angry)
-marsh_madness.house_animal(arms)
-
-noodle_town.house_animal(sal)
-noodle_town.house_animal(majesty)
-noodle_town.house_animal(squirmy)
-noodle_town.house_animal(slithery_boy)
-noodle_town.house_animal(angela)
+# noodle_town.house_animal(sal)
+# noodle_town.house_animal(majesty)
+# noodle_town.house_animal(squirmy)
+# noodle_town.house_animal(slithery_boy)
+# noodle_town.house_animal(angela)
 
 # for animal in varmint_village.animals:
 #     print(f'you can find {animal.name} in {varmint_village.attraction_name}')
@@ -51,10 +52,10 @@ noodle_town.house_animal(angela)
 # for animal in noodle_town.animals:
 #     print(f'you can find {animal.name} in {noodle_town.attraction_name}')
 
-attractions = []
-attractions.append(varmint_village)
-attractions.append(marsh_madness)
-attractions.append(noodle_town)
+# attractions = []
+# attractions.append(varmint_village)
+# attractions.append(marsh_madness)
+# attractions.append(noodle_town)
 
 # for attraction in attractions:
 #     print(f'{attraction.attraction_name} is where you will find:')
@@ -64,6 +65,9 @@ attractions.append(noodle_town)
 # slithery_boy.chip_num = 555784
 # print(slithery_boy.chip_number)  
 bob = Goose("Bob", "Canada goose", "watercress sandwiches", 678203)
-bob.run()
-bob.swim()
-print(bob)
+varmint_village.add_animal(bob)
+for animal in varmint_village.animals:
+    print(animal)
+# bob.run()
+# bob.swim()
+# print(bob)

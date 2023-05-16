@@ -14,7 +14,7 @@ class Animal:
     @property
     def chip_number(self):
         return self.__chip_number
-    
+
     @chip_number.setter
     def chip_number(self, num):
         pass
